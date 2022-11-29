@@ -1,2 +1,2 @@
-# digitaldesigner repo for testing
-first change
+# digitaldesigner 
+Det jobbes med min online portefølje. 
