@@ -1,3 +1,3 @@
 # digitaldesigner
 
-Det jobbes med min online portefølje.
+Working 9 to 24.
