@@ -48,23 +48,32 @@ html {
   height: 100%;
   scroll-behavior: smooth;
   background-image: linear-gradient(
-    to right bottom,
-    #163159,
-    #004263,
-    #005060,
-    #005c54,
-    #2d6645
+    to top,
+    #2d6645,
+    #005f54,
+    #005660,
+    #004c66,
+    #004064,
+    #023960,
+    #07325b,
+    #0e2b56,
+    #0d2953,
+    #0b2650,
+    #09244d,
+    #08224a
   );
 }
 
 body {
   position: relative;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  color: var(--clr-light);
+  line-height: 1.5;
   min-height: 100vh;
   min-height: 100dvh;
   -webkit-font-smoothing: antialiased;
-  font-family: var(--ff-primary);
-  font-size: var(--fs-400);
-  line-height: 1.5;
+ 
 }
 
 img,
@@ -80,15 +89,23 @@ h2 {
   line-height: 1.1;
   text-transform: uppercase;
   text-wrap: balance;
+  padding: 1rem 2rem;
+}
+
+p {
+    padding: 1rem;
 }
 
 ::selection {
   background-color: var(--clr-secondary-900);
 }
 
+li {
+  list-style: none;
+}
+
 a {
   cursor: pointer;
-  font-weight: bolder;
   text-decoration: none;
 }
 
@@ -98,21 +115,17 @@ a:link {
 
 a:hover,
 a:focus {
-  color: var(--clr-primary-300);
-}
-
-a:visited {
   color: var(--clr-neutral-100);
 }
 
-.active {
-  border-bottom: 2px dotted var(--clr-primary-900);
+a:visited {
+  color: var(--clr-light);
 }
 
 main {
   max-width: 1440px;
   margin: auto;
-  padding: 0.75rem;
+  padding-top: 100px;
 }
 
 /* nav */
@@ -120,16 +133,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: var(--clr-secondary-900);
-}
-
-nav li {
-  list-style: none;
-}
-
-nav a {
-  color: var(--clr-light);
-  text-decoration: none;
+  background-color: var(--clr-primary-900);
 }
 
 .container {
@@ -151,10 +155,11 @@ nav a {
 }
 
 .nav-menu {
+  font-weight: bolder;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 3rem;
 }
 
 .logo {
@@ -179,13 +184,24 @@ nav a {
   margin-top: 70px;
 }
 
+footer {
+    display: block;
+  background-color: var(--clr-secondary-900);
+}
+
+.footer__background {
+  background-image: url(/assets/footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (max-width: 1440px) {
   .container {
     width: 100%;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .hamburger {
     display: block;
   }
@@ -203,14 +219,24 @@ nav a {
   }
 
   .nav-menu {
+    background-image: linear-gradient(
+      to bottom,
+      #08224a,
+      #0a254e,
+      #0c2852,
+      #0e2b56,
+      #102e5a
+    );
+    font-size: var(--fs-600);
     position: fixed;
-    left: -100%;
+    left: 100%;
     top: 70px;
-    gap: 0;
+    gap: var(--gap);
+    padding: 2rem 3rem 2rem;
     flex-direction: column;
-    background-color: var(--clr-secondary-100);
+    align-items: end;
+
     width: 100%;
-    text-align: center;
     transition: 0.3s;
   }
 
