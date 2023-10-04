@@ -1,16 +1,20 @@
 /* @author Linda Moenstre 2023 - <linda@digitaldesigner.no> */
 
-:root {
-  --clr-body: #333333;
-  --clr-neutral-100: #ffffff;
-  --clr-neutral-300: #f5f5ef;
-  --clr-neutral-700: #bfbfbf;
-  --clr-neutral-900: #333333;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
 
-  --clr-primary-800: #00778f;
-  --clr-primary-900: #00546c;
+:root {
+  --clr-light: #ffffff;
+  --clr-dark: #08224a;
+
+  --clr-neutral-100: #fafffc;
+  --clr-neutral-300: #f6fbf7;
+  --clr-neutral-400: #bdbdbf;
+
+  --clr-primary-800: #163159;
+  --clr-primary-900: #08224a;
+
   --clr-secondary-100: #e9eddd;
-  --clr-secondary-300: #cad4a9;
+  --clr-secondary-900: #2d6645;
 
   --clr-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
@@ -23,9 +27,25 @@
   --fs-500: clamp(1.69rem, calc(1.64rem + 0.26vw), 1.88rem);
   --fs-600: clamp(2.25rem, calc(2.19rem + 0.35vw), 2.5rem);
   --fs-700: clamp(3.38rem, calc(3.28rem + 0.52vw), 3.75rem);
+
+  --letter-spacing: 4px;
+  --gap: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
   /* background-image: linear-gradient(to right bottom, #163159, #004263, #005060, #005c54, #2d6645); */
   background-image: linear-gradient(
@@ -43,15 +63,14 @@ html {
     #003155,
     #08224a
   );
-  /* height: 100%; */
 }
 
 body {
-  /* min-height: 100%; */
-  color: var(--clr-body);
   font-family: var(--ff-primary);
-  font-size: var(--fs-300);
-  line-height: 1.4;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-height: 100dvh;
   -webkit-font-smoothing: antialiased;
 }
 
