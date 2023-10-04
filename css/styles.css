@@ -47,22 +47,8 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
-  /* background-image: linear-gradient(to right bottom, #163159, #004263, #005060, #005c54, #2d6645); */
-  background-image: linear-gradient(
-    to right top,
-    #163159,
-    #003e60,
-    #004961,
-    #00535c,
-    #005c54,
-    #005b53,
-    #005952,
-    #005851,
-    #004c56,
-    #003f58,
-    #003155,
-    #08224a
-  );
+  background-image: linear-gradient(to right bottom, #163159, #004263, #005060, #005c54, #2d6645);
+
 }
 
 body {
