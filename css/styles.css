@@ -1,5 +1,108 @@
+/* @author Linda Moenstre 2023 - <linda@digitaldesigner.no> */
 
+:root {
+  --clr-body: #333333;
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-300: #f5f5ef;
+  --clr-neutral-700: #bfbfbf;
+  --clr-neutral-900: #333333;
+
+  --clr-primary-800: #00778f;
+  --clr-primary-900: #00546c;
+  --clr-secondary-100: #e9eddd;
+  --clr-secondary-300: #cad4a9;
+
+  --clr-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+  --ff-primary: "manrope", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+  --fs-300: clamp(0.88rem, calc(0.86rem + 0.09vw), 0.94rem);
+  --fs-400: clamp(1.13rem, calc(1.09rem + 0.17vw), 1.25rem);
+  --fs-500: clamp(1.69rem, calc(1.64rem + 0.26vw), 1.88rem);
+  --fs-600: clamp(2.25rem, calc(2.19rem + 0.35vw), 2.5rem);
+  --fs-700: clamp(3.38rem, calc(3.28rem + 0.52vw), 3.75rem);
+}
 
 html {
-    background-image: linear-gradient(to right bottom, #163159, #004263, #005060, #005c54, #2d6645);
+  scroll-behavior: smooth;
+  /* background-image: linear-gradient(to right bottom, #163159, #004263, #005060, #005c54, #2d6645); */
+  background-image: linear-gradient(
+    to right top,
+    #163159,
+    #003e60,
+    #004961,
+    #00535c,
+    #005c54,
+    #005b53,
+    #005952,
+    #005851,
+    #004c56,
+    #003f58,
+    #003155,
+    #08224a
+  );
+  /* height: 100%; */
+}
+
+body {
+  /* min-height: 100%; */
+  color: var(--clr-body);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-300);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg,
+header {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2 {
+  letter-spacing: 0.06rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+::selection {
+  background-color: var(--clr-secondary-300);
+}
+
+a {
+  cursor: pointer;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--clr-neutral-900);
+}
+
+a:hover,
+a:focus {
+  color: var(--clr-primary-900);
+}
+
+a:visited {
+  color: var(--clr-neutral-900);
+}
+
+.active {
+  border-bottom: 2px dotted var(--clr-primary-900);
+}
+
+main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0.75rem;
+}
+
+/*--------MEDIA QUERIES------- */
+@media screen and (min-width: 768px) {
 }
