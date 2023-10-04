@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
-    <script src="/js/main.js" defer></script>
+    <script src="/js/script.js" defer></script>
 
     <title>My portfolio</title>
     <link rel="stylesheet" href="/css/styles.css" />
@@ -19,21 +19,23 @@
 
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo">
-        </div>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="menu-toggle" id="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <div class="container">
+            <div class="subcontainer">
+                <nav class="navbar">
+                    <a href="#" class="logo">Linda</a>
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#work" class="nav-link">Work</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
