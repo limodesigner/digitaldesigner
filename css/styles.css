@@ -4,7 +4,7 @@
 
 :root {
   --clr-light: #ffffff;
-  --clr-dark: #08224a;
+  --clr-dark: #333333;
 
   --clr-neutral-100: #fafffc;
   --clr-neutral-300: #f6fbf7;
@@ -47,19 +47,17 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
-
 }
 
 body {
   position: relative;
   font-family: var(--ff-primary);
   font-size: var(--fs-400);
-  color: var(--clr-light);
+  color: var(--clr-dark);
   line-height: 1.5;
   min-height: 100vh;
   min-height: 100dvh;
   -webkit-font-smoothing: antialiased;
- 
 }
 
 img,
@@ -79,11 +77,11 @@ h2 {
 }
 
 p {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 ::selection {
-  background-color: var(--clr-secondary-900);
+  background-color: var(--clr-neutral-400);
 }
 
 li {
@@ -171,7 +169,7 @@ header {
 }
 
 footer {
-    display: block;
+  display: block;
   background-color: var(--clr-secondary-900);
 }
 
