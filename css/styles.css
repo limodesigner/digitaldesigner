@@ -47,21 +47,7 @@
 html {
   height: 100%;
   scroll-behavior: smooth;
-  background-image: linear-gradient(
-    to top,
-    #2d6645,
-    #005f54,
-    #005660,
-    #004c66,
-    #004064,
-    #023960,
-    #07325b,
-    #0e2b56,
-    #0d2953,
-    #0b2650,
-    #09244d,
-    #08224a
-  );
+
 }
 
 body {
@@ -110,16 +96,16 @@ a {
 }
 
 a:link {
-  color: var(--clr-light);
+  color: var(--clr-dark);
 }
 
 a:hover,
 a:focus {
-  color: var(--clr-neutral-100);
+  color: var(--clr-primary-800);
 }
 
 a:visited {
-  color: var(--clr-light);
+  color: var(--clr-dark);
 }
 
 main {
@@ -133,7 +119,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: var(--clr-primary-900);
+  background-color: var(--clr-neutral-100);
 }
 
 .container {
