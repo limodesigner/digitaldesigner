@@ -343,6 +343,10 @@ footer {
   margin: auto;
 }
 
+.button:hover {
+  color: var(--clr-secondary-100);
+}
+
 .contact {
   padding: 1rem;
 }
@@ -350,7 +354,6 @@ footer {
 .contact a {
   color: var(--clr-dark);
 }
-
 
 @media (min-width: 1024px) {
   .hide-l {
