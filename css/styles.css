@@ -98,7 +98,7 @@ p {
 }
 
 ::selection {
-  background-color: var(--clr-neutral-400);
+  background-color: var(--clr-primary-800);
 }
 
 li {
