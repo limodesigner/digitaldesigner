@@ -14,6 +14,8 @@
     <script src="https://kit.fontawesome.com/3f7b9a69b8.js" crossorigin="anonymous"></script>
 
     <title>My portfolio</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -54,6 +56,12 @@
             <div class="button"><a href="#contact">Let's start a project togheter</a></div>
 
         </section>
+
+        <div class="stack">
+            <div class="stack-item">
+                <img src="assets/skills.png" alt="Image of different technologies.">
+            </div>
+        </div>
 
         <section id="work" class="work">
             <h2 class="padding">Latest work</h2>
@@ -117,12 +125,13 @@
         </section>
 
 
-        <section id="about">
+        <section id="about" class="about">
             <h2 class="padding">About me</h2>
             <div class="grid">
                 <div>
 
-                    <p class="paragraph">I am a experienced Designer and Front-end Developer based in Bergen, Norway,
+                    <p class="paragraph">I am a experienced graphic designer and Front-end Developer based in Bergen,
+                        Norway,
                         with
                         over
                         five decades of
@@ -179,7 +188,7 @@
                         <a href="/assets/linda_moenstre-cv2023.pdf" target="_blank" class="button">Full resume</a>
                     </div>
                 </div>
-                <div>
+                <div class="img-position">
                     <div><img src="assets/pathfinder.jpg" alt="A path in the forest" class="hide-l"></div>
                     <div><img src="assets/pathfinder-small.jpg" alt="A path in the forest" class="hide-m"></div>
                 </div>
@@ -189,15 +198,18 @@
         </section>
 
         <section id="contact">
-            <h2 class="padding">Contact me</h2>
-            <p></p>
+            <h2 class="padding stack-item">Contact me</h2>
+            <div class="stack-item">
+                <p class="contact"><span class="material-symbols-outlined">
+                        mail
+                    </span><a href="mailto:linda@digitaldesigner.no">E-mail: linda@digitaldesigner.no</a></p>
+                <p class="contact"><span class="material-symbols-outlined">
+                        call
+                    </span><a href="tel:+4799627860">Phone: +47 99627860</a></p>
+            </div>
         </section>
 
-        <div class="stack">
-            <div>
-                <img src="assets/skills.png" alt="Image of different technologies." class="margin">
-            </div>
-        </div>
+
     </main>
 
     <footer class="footer__wrapper padding">

@@ -72,7 +72,7 @@ h1,
 h2,
 h3 {
   padding-left: 1rem;
-  letter-spacing: 0.06rem;
+  letter-spacing: var(--letter-spacing);
   line-height: 1.1;
   text-transform: uppercase;
   text-wrap: balance;
@@ -205,12 +205,22 @@ nav a:visited {
   margin: auto;
 }
 
+.material-symbols-outlined {
+  margin-right: 12px;
+}
+
 .flex {
   padding: 3rem 5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.img-position {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -248,6 +258,10 @@ nav a:visited {
   justify-content: center;
   padding: 1rem;
   margin: 2rem 0;
+}
+
+.stack-item {
+  margin-top: 2rem;
 }
 
 footer {
@@ -330,19 +344,28 @@ footer {
 }
 
 .contact {
-  background-color: var(--clr-neutral-300);
+  padding: 1rem;
 }
 
-.contact h2 {
-  padding: 2rem 1rem;
+.contact a {
+  color: var(--clr-dark);
 }
 
-.hide-l {
-  display: block;
-}
 
-.hide-m {
-  display: none;
+@media (min-width: 1024px) {
+  .hide-l {
+    display: block;
+  }
+
+  .hide-m {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
 }
 
 @media (min-width: 769px) {
@@ -357,11 +380,6 @@ footer {
   }
   .cms {
     display: flex;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -382,6 +400,20 @@ footer {
 
   #home {
     margin-top: 0;
+  }
+
+  .hide-l {
+    display: none;
+  }
+
+  .hide-m {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: 1fr;
   }
 }
 
@@ -451,14 +483,5 @@ footer {
 
   .border-radius {
     min-width: 280px;
-  }
-
-  .hide-l {
-    display: none;
-  }
-
-  .hide-m {
-    display: block;
-    margin-top: 2rem;
   }
 }
