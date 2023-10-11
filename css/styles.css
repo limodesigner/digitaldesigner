@@ -246,8 +246,14 @@ nav a:visited {
   padding: 1rem;
 }
 
+.projects a:link,
 .projects a:visited {
   color: var(--clr-dark);
+}
+
+.projects a:hover {
+  font-weight: bolder;
+  color: var(--clr-primary-800);
 }
 
 .paragraph {
